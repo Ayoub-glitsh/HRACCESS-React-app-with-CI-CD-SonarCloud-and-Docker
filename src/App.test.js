@@ -1,12 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("affiche le titre HRACCESS", () => {
+
+test("affiche HRACCESS et les sections", () => {
   render(<App />);
   expect(screen.getByText("HRACCESS")).toBeInTheDocument();
+  expect(screen.getByText("Liste des employés")).toBeInTheDocument();
+  expect(screen.getByText("Total des salaires")).toBeInTheDocument();
 });
 
-test("affiche le composant EmployeeList", () => {
-  render(<App />);
-  expect(screen.getByText("Liste des employés")).toBeInTheDocument();
-});
+
