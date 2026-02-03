@@ -4,6 +4,18 @@
 
 
 
+<p align="center">
+  <img src="assets/pipeline.png"  width="500"/>
+   <img src="assets/pipleline_02.png"  width="500" />
+</p>
+
+<p align="center">
+  <img src="assets/component_01.png"  width="500"/>
+   <img src="assets/component_02.png"  width="500" />
+</p>
+
+
+
 
 
 
