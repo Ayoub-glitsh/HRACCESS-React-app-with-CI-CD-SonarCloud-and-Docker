@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&center=true&vCenter=true&width=900&lines=HRACCESS+React+App+with+CI%2FCD%2C+SonarCloud+%26+Docker" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&center=true&vCenter=true&width=900&lines=+React+App+with+CI%2FCD%2C+SonarCloud+%26+Docker" alt="Typing SVG" />
 </p>
+
+
 
 
 📘 Documentation Technique – Projet HRACCESS
@@ -221,4 +223,3 @@ Ce projet constitue une base solide pour des applications professionnelles évol
 
     
 
-Dis-moi 👍
