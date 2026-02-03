@@ -63,7 +63,7 @@ Le projet intègre une **chaîne CI/CD complète avec GitLab**, incluant les **t
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20"/> **JavaScript (ES6)** | Logique applicative |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" width="20"/> **Jest & Testing Library** | Tests unitaires |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="20"/> **GitLab CI/CD** | Automatisation du pipeline |
-| <img src="https://cdn.simpleicons.org/sonarcloud/F3702A" width="20"/> **SonarCloud** | Analyse de la qualité du code |
+| <img src="assets/sonarqubecloud.svg" width="20"/> **SonarCloud** | Analyse de la qualité du code |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="20"/> **Docker** | Containerisation de l’application |
 | <img src="https://cdn.simpleicons.org/gitlab/FC6D26" width="20"/> **GitLab Runner** | Exécution des jobs CI/CD |
 
