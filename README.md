@@ -1,8 +1,4 @@
-Parfait 👍  
-Voici une **documentation technique complète, claire et prête à remettre** pour ton projet **HRACCESS**.  
-Tu peux **copier-coller tel quel** dans un `README.md` ou un document PDF.
 
-* * *
 
 📘 Documentation Technique – Projet HRACCESS
 ============================================
@@ -237,13 +233,7 @@ Ce projet constitue une base solide pour des applications professionnelles évol
 
 * * *
 
-Si tu veux, je peux aussi :
 
-*   ✍️ te faire une **version courte (≤ 300 mots)** pour le rendu
-    
-*   📄 t’aider à **transformer ça en PDF**
-    
-*   🎤 te préparer une **présentation orale** pour le prof
     
 
 Dis-moi 👍
