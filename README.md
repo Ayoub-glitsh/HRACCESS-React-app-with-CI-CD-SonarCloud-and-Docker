@@ -1,70 +1,249 @@
-# Getting Started with Create React App
+Parfait 👍  
+Voici une **documentation technique complète, claire et prête à remettre** pour ton projet **HRACCESS**.  
+Tu peux **copier-coller tel quel** dans un `README.md` ou un document PDF.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* * *
 
-## Available Scripts
+📘 Documentation Technique – Projet HRACCESS
+============================================
 
-In the project directory, you can run:
+1\. Présentation du projet
+--------------------------
 
-### `npm start`
+**HRACCESS** est une application web développée avec **React** permettant de gérer et visualiser une liste d’employés ainsi que le calcul automatique de la masse salariale.  
+Le projet intègre une **chaîne CI/CD complète avec GitLab**, incluant les **tests unitaires**, l’**analyse de qualité du code avec SonarCloud** et la **containerisation avec Docker**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* * *
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2\. Objectifs techniques
+------------------------
 
-### `npm test`
+*   Développer une application React modulaire
+    
+*   Mettre en place des **tests unitaires** avec Jest
+    
+*   Automatiser le cycle **Build / Test / Analyse / Déploiement**
+    
+*   Utiliser **SonarCloud** pour l’analyse de la qualité du code
+    
+*   Déployer l’application sous forme d’**image Docker**
+    
+*   Utiliser **GitLab CI/CD** avec un **runner dédié**
+    
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* * *
 
-### `npm run build`
+3\. Architecture du projet
+--------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    hraccess/
+    ├── src/
+    │   ├── components/
+    │   │   ├── EmployeeList.jsx
+    │   │   ├── EmployeeList.test.js
+    │   │   ├── SalarySum.jsx
+    │   │   └── SalarySum.test.js
+    │   ├── App.js
+    │   ├── App.test.js
+    │   └── index.js
+    ├── public/
+    ├── Dockerfile
+    ├── .gitlab-ci.yml
+    ├── sonar-project.properties
+    ├── package.json
+    └── README.md
+    
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* * *
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4\. Technologies utilisées
+--------------------------
 
-### `npm run eject`
+Technologie
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Rôle
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Interface utilisateur
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+JavaScript (ES6)
 
-## Learn More
+Logique applicative
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Jest + Testing Library
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tests unitaires
 
-### Code Splitting
+GitLab CI/CD
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Automatisation du pipeline
 
-### Analyzing the Bundle Size
+SonarCloud
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Analyse de qualité du code
 
-### Making a Progressive Web App
+Docker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Containerisation
 
-### Advanced Configuration
+GitLab Runner
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Exécution des jobs CI
 
-### Deployment
+* * *
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5\. Description des composants
+------------------------------
 
-### `npm run build` fails to minify
+### 5.1 EmployeeList
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*   Affiche la liste des employés
+    
+*   Données statiques (matricule, nom, salaire)
+    
+*   Test unitaire vérifiant l’affichage des données
+    
+
+### 5.2 SalarySum
+
+*   Calcule la somme totale des salaires
+    
+*   Reçoit les employés en props
+    
+*   Test unitaire vérifiant le calcul exact
+    
+
+* * *
+
+6\. Tests unitaires
+-------------------
+
+Les tests sont exécutés avec **Jest** et **@testing-library/react**.
+
+Commande locale :
+
+    npm test
+    
+
+Les tests couvrent :
+
+*   Le rendu des composants
+    
+*   La présence des données
+    
+*   La logique de calcul de la somme des salaires
+    
+
+* * *
+
+7\. Intégration Continue – GitLab CI/CD
+---------------------------------------
+
+Le pipeline CI/CD est défini dans le fichier `.gitlab-ci.yml`.
+
+### Étapes du pipeline :
+
+1.  **Test** : exécution des tests unitaires
+    
+2.  **Build** : génération du build React
+    
+3.  **AnalyseSonar** : analyse de la qualité du code via SonarCloud
+    
+4.  **DeployDockerize** : création et publication de l’image Docker
+    
+
+Le pipeline est déclenché automatiquement à chaque `git push` sur la branche `main`.
+
+* * *
+
+8\. Analyse de qualité – SonarCloud
+-----------------------------------
+
+L’analyse SonarCloud est configurée via le fichier :
+
+    sonar-project.properties
+    
+
+Critères analysés :
+
+*   Bugs
+    
+*   Code Smells
+    
+*   Maintainability
+    
+*   Reliability
+    
+*   Security
+    
+
+Les résultats sont consultables sur le tableau de bord SonarCloud du projet.
+
+* * *
+
+9\. Containerisation – Docker
+-----------------------------
+
+L’application est déployée via Docker avec un serveur **Nginx**.
+
+### Commandes Docker (local) :
+
+    docker build -t hraccess .
+    docker run -p 8080:80 hraccess
+    
+
+Accès application :
+
+    http://localhost:8080
+    
+
+* * *
+
+10\. Gestion des runners GitLab
+-------------------------------
+
+Le pipeline est exécuté grâce à un **GitLab Runner Windows auto-hébergé**, enregistré comme **Project Runner**, permettant l’exécution des jobs CI/CD.
+
+* * *
+
+11\. Sécurité
+-------------
+
+*   Les tokens sensibles (SonarCloud, Registry) sont stockés dans **GitLab CI/CD Variables**
+    
+*   Les tokens sont masqués et non présents dans le code source
+    
+
+* * *
+
+12\. Conclusion
+---------------
+
+Le projet HRACCESS met en œuvre une **chaîne DevOps complète**, conforme aux bonnes pratiques industrielles, incluant :
+
+*   Développement modulaire
+    
+*   Tests automatisés
+    
+*   Analyse de qualité du code
+    
+*   Déploiement containerisé
+    
+*   Automatisation CI/CD
+    
+
+Ce projet constitue une base solide pour des applications professionnelles évolutives.
+
+* * *
+
+Si tu veux, je peux aussi :
+
+*   ✍️ te faire une **version courte (≤ 300 mots)** pour le rendu
+    
+*   📄 t’aider à **transformer ça en PDF**
+    
+*   🎤 te préparer une **présentation orale** pour le prof
+    
+
+Dis-moi 👍
